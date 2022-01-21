@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Karthik Reddy Kanala">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="progtype is a customizable typing website for programmers">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>progtype</title>
+        <!-- resettig css -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <!-- Google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+        <!-- default styling -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- themes -->
+        <link rel="stylesheet" type="text/css" href="themes/default.css">
+    </head>
+    <body>
+        <!-- popup after pressing select/add button -->
+        <div class="customtextWrapper">
+            <label for="ctitleinput">Title of the text</label>
+            <textarea class="ctitle" name="ctitleinput"></textarea>
+            <label for="ctextinput">Text</label>
+            <textarea id="input" name="ctextinput"></textarea>
+            <button>Save</button>
+        </div>
+        <!-- popup after typing is completed -->
+        <div class="completed">
+            <div class="results">
+                <div>
+                    <p>WPM :</p>
+                    <p id="wpm"></p>
+                </div>
+                <div>
+                    <p id="accuracy">Accuracy :</p>
+                </div>
+            </div>
+            <button>next</button>
+            <button>repeat</button>
+        </div>
+        <!-- main area  -->
+        <div class="main">
+            <!-- header -->
+            <div class="top">
+                <h2 style="flex-grow: 20;">progtype</h2>
+            </div>
+            <!-- typing area -->
+            <div class="middle">
+                <div><h1 class="ttitle">title</h1></div>
+                <div class="typingarea">
+
+                </div>
+                <div>
+                    <button><i class="fa fa-undo"></i></button>
+                    <button>select</button>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="bottom">
+                <button class="popup" onclick="custom()" style="flex-grow: 1;">custom</button>
+                <button class="popup" onclick="addNew()" style="flex-grow: 1;">add</button>
+                <button class="popup" onclick="themes()" style="flex-grow: 1;">themes</button>
+            </div>
+        </div>
+        <p>GNU General Public License v3.0</p>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.js"></script>
+    </body>
+</html>

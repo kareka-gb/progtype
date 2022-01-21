@@ -1,0 +1,56 @@
+/* body styles */
+body {
+    font-family: "Source Code Pro";
+}
+
+/* main view page styling */
+.main {
+    /* display type is flex */
+    display: flex;
+    /* display direction is column wise */
+    flex-direction: column;
+}
+
+/* custom text popup on clicking select/add button */
+.customtextWrapper {
+    visibility: hidden;
+    height: 0;
+}
+
+/* completed popup window */
+.completed {
+    visibility: hidden;
+    height: 0;
+}
+
+/* top title in page */
+.top {
+    /* display type is flex */
+    display: flex;
+    /* direction of flex */
+    flex-direction: row;
+    /* automatically wraps elements */
+    flex-wrap: wrap;
+    /* flex property to arrange top, middle, bottom */
+    flex:auto;
+    /* margin */
+    margin: auto auto;
+}
+
+/* middle content of the page */
+.middle {
+    /* flex property to arrange top, middle, bottom */
+    flex: auto;
+    /* margin */
+    margin: auto auto;
+}
+
+
+/* bottom content of the page */
+.bottom {
+    /* flex property to arrange top, middle, bottom */
+    flex: auto;
+    display: flex;
+    /* margin */
+    margin: auto auto;
+}
